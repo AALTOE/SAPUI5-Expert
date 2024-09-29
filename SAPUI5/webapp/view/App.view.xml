@@ -1,16 +1,47 @@
 <mvc:View
     controllerName="logaligroup.SAPUI5.controller.App"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc">
-    <Button
-        id="btn1"
-        text="{i18n>btn_text}"
-        press=".onShowHello"/>
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+>
+    <Shell id="shel1">
+        <App id="app1">
+            <pages>
+                <Page
+                    id="page1"
+                    title="{i18n>appTitle}"
+                >
+                    <content>
+                        <Panel
+                            id="panel1"
+                            headerText="{i18n>helloPanel}"
+                            class="sapUiResponsiveMargin"
+                            width="auto"
+                        >
+                            <content>
+                                <Button
+                                    id="btn1"
+                                    text="{i18n>btn_text}"
+                                    press=".onShowHello"
+                                    class="sapUiSmallMarginEnd"
+                                />
 
-    <Input
-        id="ipt1"
-        value="{/recipient/name}"
-        description="Hola {/recipient/name}"
-        valueLiveUpdate="true"
-        width="60%"/>
+                                <Input
+                                    id="ipt1"
+                                    value="{/recipient/name}"
+                                    valueLiveUpdate="true"
+                                    width="60%"
+                                />
+                                <Text
+                                    id="text1"
+                                    text="Hello {/recipient/name}"
+                                    class="sapUiSmallMargin boldelEments sapthemeHighligth-asColor"
+                                />
+                            </content>
+                        </Panel>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
 </mvc:View>
