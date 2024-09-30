@@ -11,34 +11,19 @@
                     id="page1"
                     title="{i18n>appTitle}"
                 >
+                    <headerContent>
+                        <Button
+                            id="btn3"
+                            icon="sap-icon://action"
+                            press=".onOpendialogHeader"
+                            class="sapUiSmallMarginEnd"
+                        />
+                    </headerContent>
                     <content>
-                        <Panel
-                            id="panel1"
-                            headerText="{i18n>helloPanel}"
-                            class="sapUiResponsiveMargin"
-                            width="auto"
-                        >
-                            <content>
-                                <Button
-                                    id="btn1"
-                                    text="{i18n>btn_text}"
-                                    press=".onShowHello"
-                                    class="sapUiSmallMarginEnd"
-                                />
-
-                                <Input
-                                    id="ipt1"
-                                    value="{/recipient/name}"
-                                    valueLiveUpdate="true"
-                                    width="60%"
-                                />
-                                <Text
-                                    id="text1"
-                                    text="Hello {/recipient/name}"
-                                    class="sapUiSmallMargin boldelEments sapthemeHighligth-asColor"
-                                />
-                            </content>
-                        </Panel>
+                        <mvc:XMLView
+                            id="Panelview1"
+                            viewName="logaligroup.SAPUI5.view.HelloPanel"
+                        />
                     </content>
                 </Page>
             </pages>

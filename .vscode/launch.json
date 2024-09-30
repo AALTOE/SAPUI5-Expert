@@ -1,6 +1,7 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
     {
       "name": "SAPUI5AAE",
       "cwd": "${workspaceFolder}/SAPUI5",
