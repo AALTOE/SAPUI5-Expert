@@ -51,7 +51,11 @@
         "settings": {
           "bundleName": "logaligroup.SAPUI5.i18n.i18n"
         }
-      }
+      },
+      "invoices": {
+          "type": "sap.ui.model.json.JSONModel",
+          "uri": "Invoices.json"
+        }
     },
     "resources": {
       "css": [

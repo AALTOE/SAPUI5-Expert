@@ -24,6 +24,10 @@
                             id="Panelview1"
                             viewName="logaligroup.SAPUI5.view.HelloPanel"
                         />
+                        <mvc:XMLView
+                            id="Panelview2"
+                            viewName="logaligroup.SAPUI5.view.InvoicesList"
+                        />
                     </content>
                 </Page>
             </pages>

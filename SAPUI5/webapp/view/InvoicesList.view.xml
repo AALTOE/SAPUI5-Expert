@@ -1,0 +1,45 @@
+<mvc:View
+    controllerName="logaligroup.SAPUI5.controller.InvoicesList"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <List
+        id="invoiceList"
+        headerText="{i18n>invoicesListTitle}"
+        class="sapuiResponsiveMargin"
+        width="auto"
+        items="{ path : 'invoices>/Invoices',
+                sorter: {path : 'ShipperName',
+                        group : true}}"
+    >
+        <headerToolbar>
+            <Toolbar id="toobarinvoice1">
+            <Title id="title2" text="{i18n>invoicesListTitle}"></Title>
+                <ToolbarSpacer id="toospace"/>
+                <SearchField id="searchf1" width="50%" search=".onFilterInvoices"/>
+            </Toolbar>
+        </headerToolbar>
+        <items>
+            <ObjectListItem
+                id="oBjectview1"
+                title="{invoices>Quantity} x {invoices>ProductName}"
+                number="{parts: [ {path : 'invoices>ExtendedPrice'},
+                                  {path : 'currency>/usd'}],
+                        type: 'sap.ui.model.type.Currency',
+                        formatOptions:{
+                            showMeasure : false
+                        }}"
+                numberUnit="{currency>/usd}"
+                numberState="{= ${invoices>ExtendedPrice}>9 ? 'Success' : 'Error'}"
+            >
+                <firstStatus>
+                    <ObjectStatus
+                        id="objtstatu1"
+                        text="{path : 'invoices>Status',
+                                formatter : '.formatter.invoiceStatus'}"
+                    />
+                </firstStatus>
+            </ObjectListItem>
+        </items>
+    </List>
+</mvc:View>
