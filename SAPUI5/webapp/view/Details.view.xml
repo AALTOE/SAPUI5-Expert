@@ -2,6 +2,8 @@
     controllerName="logaligroup.SAPUI5.controller.Details"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:logali="logaligroup.SAPUI5.control"
     displayBlock="true"
 >
     <Page
@@ -26,5 +28,7 @@
 
             </attributes>
         </ObjectHeader>
+
+        <logali:ProductRating id="rating" class="sapUISmallMarginBeginEnd" change=".onRatingChange" />
     </Page>
 </mvc:View>
