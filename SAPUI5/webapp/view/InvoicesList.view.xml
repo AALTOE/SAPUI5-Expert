@@ -30,7 +30,9 @@
                             showMeasure : false
                         }}"
                 numberUnit="{currency>/usd}"
-                numberState="{= ${invoices>ExtendedPrice}>9 ? 'Success' : 'Error'}"
+                numberState="{= ${invoices>ExtendedPrice}>10 ? 'Success' : 'Error'}"
+                type="Navigation"
+                press="navigateToDetails"
             >
                 <firstStatus>
                     <ObjectStatus

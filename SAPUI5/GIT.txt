@@ -1,0 +1,7 @@
+git status
+git checkout -b Nombre_Rama
+git status
+git add .
+git commit -m "Nombre Submodulo"
+git push
+git pushh set upstream

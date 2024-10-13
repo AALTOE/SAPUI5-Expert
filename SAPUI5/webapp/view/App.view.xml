@@ -5,32 +5,7 @@
     displayBlock="true"
 >
     <Shell id="shel1">
-        <App id="app1">
-            <pages>
-                <Page
-                    id="page1"
-                    title="{i18n>appTitle}"
-                >
-                    <headerContent>
-                        <Button
-                            id="btn3"
-                            icon="sap-icon://action"
-                            press=".onOpendialogHeader"
-                            class="sapUiSmallMarginEnd"
-                        />
-                    </headerContent>
-                    <content>
-                        <mvc:XMLView
-                            id="Panelview1"
-                            viewName="logaligroup.SAPUI5.view.HelloPanel"
-                        />
-                        <mvc:XMLView
-                            id="Panelview2"
-                            viewName="logaligroup.SAPUI5.view.InvoicesList"
-                        />
-                    </content>
-                </Page>
-            </pages>
-        </App>
+        <App id="app" />
+            
     </Shell>
 </mvc:View>
