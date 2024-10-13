@@ -8,7 +8,7 @@
         headerText="{i18n>invoicesListTitle}"
         class="sapuiResponsiveMargin"
         width="auto"
-        items="{ path : 'invoices>/Invoices',
+        items="{ path : 'northwind>/Invoices',
                 sorter: {path : 'ShipperName',
                         group : true}}"
     >
@@ -22,8 +22,8 @@
         <items>
             <ObjectListItem
                 id="oBjectview1"
-                title="{invoices>Quantity} x {invoices>ProductName}"
-                number="{parts: [ {path : 'invoices>ExtendedPrice'},
+                title="{northwind>Quantity} x {northwind>ProductName}"
+                number="{parts: [ {path : 'northwind>ExtendedPrice'},
                                   {path : 'currency>/usd'}],
                         type: 'sap.ui.model.type.Currency',
                         formatOptions:{

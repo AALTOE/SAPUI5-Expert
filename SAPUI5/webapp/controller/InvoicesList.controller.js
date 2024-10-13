@@ -14,11 +14,11 @@ sap.ui.define([
      * @param {typeof sap.ui.model.FilterOperator} FilterOperator
      */
 
-    function (Controller, JSONModel, IncoicesFormatter, Filter, FilterOperator) {
+    function (Controller, JSONModel, InvoicesFormatter, Filter, FilterOperator) {
 
         return Controller.extend("logaligroup.SAPUI5.controller.InvoicesList", {
 
-            formatter: IncoicesFormatter,
+            formatter: InvoicesFormatter,
 
             onInit: function () {
                 var oViewModel = new JSONModel({
