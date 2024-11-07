@@ -8,6 +8,8 @@
         headerText="{i18n>panelTitle}"
         class="sapUiResponsiveMargin"
         width="50%"
+        expandable="{device>/system/phone}"
+        expand="{= !${device>/system/phone} }"
     >
         <f:SimpleForm
             id="form"

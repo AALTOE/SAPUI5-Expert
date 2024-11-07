@@ -10,21 +10,23 @@
         headerText="{i18n>helloPanel}"
         class="sapUiResponsiveMargin"
         width="auto"
+        expandable="{device>/system/phone}"
+        expand="{= !${device>/system/phone} }"
     >
         <content>
-        <Button
+            <Button
                 id="btn2"
                 icon="sap-icon://action"
                 text="{i18n>btn_Dialog}"
                 press=".onOpendialog"
-                class="sapUiSmallMarginEnd"
+                class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"
             />
 
             <Button
                 id="btn1"
                 text="{i18n>btn_text}"
                 press=".onShowHello"
-                class="sapUiSmallMarginEnd"
+                class="sapUiSmallMarginEnd sapUiHideOnDesktop"
             />
 
             <Input
@@ -41,6 +43,8 @@
         </content>
     </Panel>
 
-    <core:Fragment fragmentName="logaligroup.SAPUI5.view.Form01" type="XML"/>
-
+    <core:Fragment
+        fragmentName="logaligroup.SAPUI5.view.Form01"
+        type="XML"
+    />
 </mvc:View>

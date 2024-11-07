@@ -5,7 +5,7 @@
     displayBlock="true"
 >
     <Shell id="shel1">
-        <App id="app" />
+        <App id="app"/>
             
     </Shell>
 </mvc:View>

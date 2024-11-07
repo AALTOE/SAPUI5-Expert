@@ -8,6 +8,14 @@
         id="page1"
         title="{i18n>appTitle}"
     >
+        <landmarkInfo>
+            <PageAccessibleLandmarkInfo rootRole="Region" 
+                                        rootLabel="{i18n>overviewRootLabel}"
+                                        contentRole="Main"
+                                        contentLabel="{i18n>overviewContentLabel}"
+                                        headerRole="Banner"
+                                        headerLabel="{i18n>overviewHeaderLabel}"/>
+        </landmarkInfo>
         <headerContent>
             <Button
                 id="btn3"

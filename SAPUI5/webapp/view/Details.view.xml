@@ -15,16 +15,18 @@
         <ObjectHeader
             id="headeDetail"
             title="{northwind>Quantity} x {northwind>ProductName}"
+            responsive="true"
+            fullScreenOptimized="true"
         >
             <attributes>
-                <ObjectAttribute text="{northwind>ShipName}" />
-                <ObjectAttribute text="{northwind>ShipAddress}" />
-                <ObjectAttribute text="{northwind>ShipCity}" />
-                <ObjectAttribute text="{northwind>ShipRegion}" />
-                <ObjectAttribute text="{northwind>ShipPostalCode}" />
-                <ObjectAttribute text="{northwind>ShipCountry}" />
-                <ObjectAttribute text="{northwind>CustomerID}" />
-                <ObjectAttribute text="{northwind>CustomerName}" />
+                <ObjectAttribute id="ShipName" text="{northwind>ShipName}" />
+                <ObjectAttribute id="ShipAddress" text="{northwind>ShipAddress}" />
+                <ObjectAttribute id="ShipCity" text="{northwind>ShipCity}" />
+                <ObjectAttribute id="ShipRegion" text="{northwind>ShipRegion}" />
+                <ObjectAttribute id="ShipPostalCode" text="{northwind>ShipPostalCode}" />
+                <ObjectAttribute id="ShipCountry" text="{northwind>ShipCountry}" />
+                <ObjectAttribute id="CustomerID" text="{northwind>CustomerID}" />
+                <ObjectAttribute id="CustomerName" text="{northwind>CustomerName}" />
 
             </attributes>
         </ObjectHeader>
